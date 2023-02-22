@@ -17,5 +17,5 @@ int main(){
 }
     
 int fatorial(int n1){
-    return n1*fatorial(n-1);
+    return n1*fatorial(n1-1);
 }
