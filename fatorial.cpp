@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void fatorial(int n1);
+int fatorial(int n1);
 
 
 int main(){
@@ -8,18 +8,14 @@ int main(){
     cout << "\n Digite um número para ser calculado o fatorial \n";
     cin  >> a;
 
+    cout << "\nO valor fatorial do número calculado é: " << fatorial(a) << endl;
 
 
-    fatorial(a);
 
 
     return 0;
 }
     
-void fatorial(int n1){
-    int res=1;
-    for (int i=n1;i>0;i--){
-        res = res*i;
-    }
-    cout << "\nO valor fatorial do número calculado é: " << res << endl;
+int fatorial(int n1){
+    return n1*fatorial(n-1);
 }
